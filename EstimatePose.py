@@ -1,4 +1,7 @@
 # pose estimation
+from headpose import PoseEstimator
+import cv2
+ 
 
 est = PoseEstimator()  #load the model
 # take an image using the webcam (alternatively, you could load an image)
@@ -8,7 +11,7 @@ est = PoseEstimator()  #load the model
 #ret, image = cam.retrieve()
 #image = cv2.imread('/content/photo_2019-02-10_09-38-20.jpg')
 
-def EstimatePose (image):
+def estimatePose (image):
   image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
   #cam.release()
   #if est.pose_from_image(image) == True:
