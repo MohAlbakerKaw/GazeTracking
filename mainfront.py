@@ -1,5 +1,11 @@
+from detectGaze import detectGaze
+from EAR import EAR
+from EstimatePose import estimatePose
+
+
+
 def main_front(image):
-  rollv = EstimatePose(image)
+  rollv = estimatePose(image)
   EARv = EAR(image)
   Gazev = detectGaze(image)
 
